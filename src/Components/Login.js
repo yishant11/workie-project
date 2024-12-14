@@ -9,6 +9,7 @@ import { auth } from "../firebase";
 import { useNavigate } from "react-router-dom";
 import { addUser, getUsers } from "./data";
 import Logo from "../assets/logo.png";
+import BGIMG from "../assets/bg_img.png"
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -84,7 +85,7 @@ const Login = () => {
       <img src = {Logo} alt="No Image" style={{height:"150px", width:"150px",borderRadius:"50%", position:"relative", top:"30px", left:"50px"}}/>
       <div className="absolute">
         <img
-          src="https://i0.wp.com/workie.in/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-12-at-5.55.57-PM-e1681303139472.jpeg?fit=1540%2C904&ssl=1"
+          src={BGIMG}
           alt="logo"
           style={{ position: "relative",top:"-150px", right: "0px",zIndex:"-1", width: "2000px", height:"100vh",marginBottom:"-150px" }}
         />
